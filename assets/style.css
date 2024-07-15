@@ -19,7 +19,7 @@ body {
     width: 100%;
     margin: auto;
     max-width: 1200px;
-    padding: 20px 0;
+    padding: 0px 20px;
 }
 
 .logo a {
@@ -38,7 +38,8 @@ body {
 header .container {
     display: flex;
     align-items: center;
-    padding: 45px 0;
+    padding-top: 45px;
+    padding-bottom: 45px;
     gap: 50px;
 }
 
@@ -78,4 +79,34 @@ header nav .button {
 header nav .button:hover {
     color: #999;
     border-color: #999;
+}
+
+header .menu {
+    display: none;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+header .menu-icon {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+header .menu-icon div {
+    height: 6px;
+    background-color: #FFF;
+}
+
+@media (max-width: 820px) {
+    header nav {
+        display: none;
+    }
+
+    header .menu {
+        display: flex;
+    }
 }
